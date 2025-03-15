@@ -9,13 +9,14 @@ const Projects = () => {
     { name: "/projects/pagination" },
     { name: "/projects/customhook" },
     { name: "/projects/flatobj" },
+    { name: "/projects/progressbar" },
   ];
   useEffect(() => {
-    if (location.pathname.split('/').length == 2) {
-      navigate(routes[0].name)
+    if (location.pathname.split("/").length == 2) {
+      navigate(routes[0].name);
     }
-  }, [])
-  
+  }, []);
+
   return (
     <>
       <div className="project-route">
@@ -27,7 +28,7 @@ const Projects = () => {
               isActive ? "active-link" : "nav-link"
             }
           >
-            {e.name.split('/')[2]}
+            {e.name.split("/")[2]}
           </NavLink>
         ))}
       </div>

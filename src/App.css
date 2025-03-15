@@ -1,76 +1,76 @@
-*{
+* {
   box-sizing: border-box;
 }
-.nav-link{
+.nav-link {
   color: white;
   padding: 2px 6px;
 }
-.active-link{
+.active-link {
   color: white;
   background-color: rgba(245, 245, 245, 0.326);
   padding: 2px 6px;
   border-radius: 4px;
 }
-.debounce-input{
+.debounce-input {
   border: 2px solid black;
 }
-.dropdown-container{
+.dropdown-container {
   height: 200px;
   overflow: auto;
   border: 1px solid black;
   border-radius: 4px;
-  li{
+  li {
     cursor: pointer;
   }
 }
-.project-route{
+.project-route {
   display: flex;
   margin: 4px;
-  a{
+  a {
     margin: 2px;
     border-radius: 4px;
   }
-  .active-link{
+  .active-link {
     background-color: rgba(0, 0, 0, 0.775);
     color: white;
   }
-  .nav-link{
+  .nav-link {
     color: black;
     border: 1px solid black;
   }
 }
-.project-container{
+.project-container {
   margin: 10px;
 }
-.flat{
+.flat {
   word-wrap: break-word;
 }
-.pg-container{
+.pg-container {
   border: 1px solid black;
   padding: 6px;
 }
-.pg-element{
+.pg-element {
   padding: 4px 10px;
   margin: 2px;
   border: 1px solid black;
   cursor: pointer;
 }
-.pg-active{
+.pg-active {
   color: white;
   background-color: black;
 }
-.pg-element:disabled{
+.pg-element:disabled {
   background-color: gray;
   opacity: 0.5;
   cursor: not-allowed;
 }
-.prod-container{
+.prod-container {
   display: flex;
   flex-wrap: wrap;
   height: 400px;
   overflow: auto;
 }
-.prod{
+.prod {
   border: 1px solid black;
   width: 200px;
   height: 150px;
@@ -79,14 +79,43 @@
   justify-content: center;
   align-items: center;
 }
-.prod img{
+.prod img {
   height: 100px;
 }
-.prod span{
+.prod span {
   text-align: center;
   margin: 4px 0px;
 }
-.use-fetch{
+.use-fetch {
   height: 80vh;
   overflow: scroll;
+}
+.progress-container {
+  width: 1000px;
+  height: 25px;
+  border-radius: 8px;
+  border: 1px solid black;
+  margin: 10px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+.progress-inner {
+  animation: 400ms ease-in slideInFromLeft;
+  background-color: green;
+  text-align: center;
+}
+.percentage {
+  position: absolute;
+  left: 50%;
+  color: black;
+  font-weight: bold;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
