@@ -11,6 +11,7 @@ const Projects = () => {
     { name: "/projects/flatobj" },
     { name: "/projects/progressbar" },
     { name: "/projects/folderstructure" },
+    { name: "/projects/otp" },
   ];
   useEffect(() => {
     if (location.pathname.split("/").length == 2) {

@@ -8,6 +8,7 @@ import CustomHook from "./machine-coding/CustomHook";
 import FlatteningObj from "./machine-coding/FlatteningObj";
 import ProgressBar from "./machine-coding/ProgressBar";
 import FolderStructure from "./machine-coding/FolderStructure";
+import Otp from "./machine-coding/Otp";
 
 function App() {
   const Home = lazy(() => import("./pages/Home"));
@@ -19,6 +20,7 @@ function App() {
     { path: "flatobj", element: <FlatteningObj /> },
     { path: "progressbar", element: <ProgressBar /> },
     { path: "folderstructure", element: <FolderStructure /> },
+    { path: "otp", element: <Otp /> },
   ];
   return (
     <>
