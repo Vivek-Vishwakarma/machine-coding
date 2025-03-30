@@ -10,6 +10,7 @@ const Projects = () => {
     { name: "/projects/customhook" },
     { name: "/projects/flatobj" },
     { name: "/projects/progressbar" },
+    { name: "/projects/folderstructure" },
   ];
   useEffect(() => {
     if (location.pathname.split("/").length == 2) {

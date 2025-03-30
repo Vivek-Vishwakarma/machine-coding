@@ -119,3 +119,9 @@
     transform: translateX(0);
   }
 }
+.folder {
+  cursor: pointer;
+}
+.folder-container {
+  margin-left: 14px;
+}
