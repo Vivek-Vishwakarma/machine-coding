@@ -22,7 +22,7 @@ export const Navbar = () => {
                     isActive ? "active-link" : "nav-link"
                   }
                 >
-                  Projects
+                  Machine Coding
                 </NavLink>
               </div>
             </div>

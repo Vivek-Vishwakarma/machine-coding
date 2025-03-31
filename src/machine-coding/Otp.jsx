@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-let INPUT = 7;
+let INPUT = 5;
 const Otp = () => {
   const [input, setInput] = useState(new Array(INPUT).fill(""));
   const inputRefs = useRef([]);
