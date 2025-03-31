@@ -1,30 +1,24 @@
 import React, { useEffect, useRef, useState } from "react";
 
-let INPUT = 5;
+let INPUT = 7;
 const Otp = () => {
   const [input, setInput] = useState(new Array(INPUT).fill(""));
-  const inputRefs = useRef([]); // Array of refs
+  const inputRefs = useRef([]);
   const inputChange = (e, i) => {
-    if (isNaN(e)) return;
-    setInput((prevItems) => {
-      const newItems = [...prevItems];
-      newItems[i] = e.slice(-1);
-      inputRefs.current[i + 1]?.focus();
-      return newItems;
-    });
+    if (isNaN(e) || e == " ") return;
+    const newItems = [...input];
+    newItems[i] = e.slice(-1);
+    e && inputRefs.current[i + 1]?.focus();
+    setInput(newItems);
   };
+
   useEffect(() => {
     inputRefs.current[0]?.focus();
   }, []);
+
   const handleKeyDown = (event, i) => {
-    if (event.key === "Backspace") {
-      setInput((prevItems) => {
-        const newItems = [...prevItems];
-        newItems[i] = "";
-        return newItems;
-      });
+    if (!event.target.value && event.key === "Backspace") {
       inputRefs.current[i - 1]?.focus();
-      console.log(input);
     }
   };
   return (
