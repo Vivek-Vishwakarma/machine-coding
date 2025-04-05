@@ -9,6 +9,7 @@ import FlatteningObj from "./machine-coding/FlatteningObj";
 import ProgressBar from "./machine-coding/ProgressBar";
 import FolderStructure from "./machine-coding/FolderStructure";
 import Otp from "./machine-coding/Otp";
+import NestedCheckbox from "./machine-coding/NestedCheckbox";
 
 function App() {
   const Home = lazy(() => import("./pages/Home"));
@@ -21,6 +22,7 @@ function App() {
     { path: "progressbar", element: <ProgressBar /> },
     { path: "folderstructure", element: <FolderStructure /> },
     { path: "otp", element: <Otp /> },
+    { path: "nestedcheckbox", element: <NestedCheckbox /> },
   ];
   return (
     <>

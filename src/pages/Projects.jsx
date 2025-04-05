@@ -12,6 +12,7 @@ const Projects = () => {
     { name: "/projects/progressbar" },
     { name: "/projects/folderstructure" },
     { name: "/projects/otp" },
+    { name: "/projects/nestedcheckbox" },
   ];
   useEffect(() => {
     if (location.pathname.split("/").length == 2) {
